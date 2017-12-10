@@ -1,0 +1,97 @@
+// Louis' styles!
+
+@gutter_grey:   #3C3F41;
+@black:         #000000;
+@comment_grey:  #999999;
+@text_white:    #E6E6E6;
+@variable_peach:  #CFAC9D;
+@string_green:    #7EB478;
+@keyword_blue:    #6398EA;
+@declaration_blue:  #83B2E2;
+@constant_blue:     #BEDFFF;
+@heredoc_orange:    #FF8713;
+@important_orange:  #B76639;
+
+@background_grey: #2E2E2E;
+
+
+
+/////////////////
+
+
+// Config -----------------------------------
+@syntax-hue:          207;
+@syntax-saturation:   0;
+@syntax-brightness:   17%;
+
+// Monochrome -----------------------------------
+@mono-0: hsl(@syntax-hue, 10%, 90%);
+@mono-1: hsl(@syntax-hue, 14%, 71%);
+@mono-2: hsl(@syntax-hue, 9%, 55%);
+@mono-3: hsl(@syntax-hue, 10%, 40%);
+@mono-4: hsl(0, 0%, 15%);
+
+// Colors -----------------------------------
+@hue-1:   hsl(187, 47%, 55%); // <-cyan
+@hue-2:   @declaration_blue; // <-blue
+@hue-3:   hsl(286, 60%, 67%); // <-purple
+@hue-3-2: hsl(236, 40%, 60%); // <-violet
+@hue-3-3: hsl(331, 64%, 52%); // <-magenta
+@hue-4:   hsl(95, 38%, 62%);  // <-green
+@hue-4-2: @keyword_blue; // <- green 2
+
+@hue-5:   hsl(355, 65%, 65%); // <-red 1
+@hue-5-2: hsl(5, 48%, 51%);   // <-red 2
+@hue-5-3: hsl(5, 80%, 50%);   // <-red 3
+
+@hue-6:   hsl(17, 80%, 40%); // <-orange 1
+@hue-6-2: hsl(39, 67%, 69%); // <-orange 2
+@hue-6-3: hsl(45, 100%, 35%); // <-yellow
+
+// Base colors -----------------------------------
+@syntax-fg:     @text_white;
+@syntax-bg:     @background_grey;
+@syntax-gutter: @gutter_grey;
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66%);
+
+//default
+@base: @mono-4;
+
+@base03:  #002B36;
+@base02:  #073642;
+@base01:  #586E75;
+@base00:  #657B83;
+@base0:   #839496;
+@base1:   #93A1A1;
+@base2:   #EEE8D5;
+@base3:   #FDF6E3;
+
+@yellow:  @hue-6-3;
+@orange:  @hue-6;
+@red:     @hue-5-3;
+@magenta: @hue-3-3;
+@violet:  @hue-3-2;
+@blue:    @hue-2;
+@cyan:    @hue-1;
+@green:   @keyword_blue;
+
+@text: @text_white;
+
+//monokai
+@entity:       @declaration_blue;
+@keyword:      @keyword_blue;
+@string:       @string_green;
+@cursor:       #FFF;
+
+@boolean:      @constant_blue;
+@character:    #E6DB74;
+@constant:     @boolean;
+@number:       @boolean;
+@variable:     @variable_peach;
+@variable_property: #b9988a;
+@variable_this: #f1b86d;
+@storage:      @keyword_blue;
+@functionCall: @declaration_blue;
+
+@operator: darken(@text_white, 5%);

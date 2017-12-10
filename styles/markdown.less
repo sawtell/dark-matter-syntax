@@ -1,0 +1,25 @@
+.markdown-preview {
+  atom-text-editor {
+    color: @syntax-fg;
+    background-color: @syntax-bg;
+  }
+}
+
+.syntax--markup {
+  &.syntax--heading {
+    font-weight: bold;
+  }
+
+  &.syntax--marker {
+    color: @entity;
+  }
+
+  &.syntax--link {
+    //color: lighten(@string, 15%);
+    text-decoration: underline;
+  }
+
+  &.syntax--raw {
+    color: @hue-1;
+  }
+}
