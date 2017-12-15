@@ -32,15 +32,20 @@
 @syntax-color-removed:  @hue-5;
 
 // For language entity colors
-@syntax-color-variable:   @hue-5;
-@syntax-color-constant:   @hue-6;
+@syntax-color-variable:   @variable;
+@syntax-color-comment:    @comment_grey;
+@syntax-color-constant:   @constant;
 @syntax-color-property:   @syntax-fg;
 @syntax-color-value:      @syntax-fg;
-@syntax-color-function:   @hue-2;
+@syntax-color-function:   @functionCall;
 @syntax-color-method:     @hue-2;
 @syntax-color-class:      @hue-6-2;
-@syntax-color-keyword:    @hue-3;
+@syntax-color-keyword:    @keyword;
 @syntax-color-tag:        @hue-5;
 @syntax-color-attribute:  @hue-6;
 @syntax-color-import:     @hue-3;
 @syntax-color-snippet:    @hue-4;
+@syntax-color-string:     @string_green;
+@syntax-color-regexp:     @regex_red;
+@syntax-color-regexp-special: #e6a8a8;
+// @syntax-color-regexp-special:     lighten(@regex_red, 15%);

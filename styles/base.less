@@ -132,19 +132,27 @@ atom-text-editor {
   .string-color(@base);
 
   .syntax--constant.syntax--character.syntax--escape {
-    color: @red;
+    color: @syntax-color-regexp-special;
   }
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @syntax-color-regexp;
 
     .syntax--source.syntax--ruby.syntax--embedded,
     .syntax--string.syntax--regexp.syntax--arbitrary-repitition {
       color: @red;
+    }
+    .syntax--constant.syntax--character.syntax--escape,
+    .syntax--keyword {
+      color: @syntax-color-regexp-special;
     }
   }
 }
 
 .syntax--key.syntax--json .syntax--string {
   color: @variable;
+}
+
+.syntax--invalid.syntax--illegal {
+  text-decoration: underline;
 }
